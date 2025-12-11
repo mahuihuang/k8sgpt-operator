@@ -162,6 +162,7 @@ type K8sGPTSpec struct {
 	Resources        *corev1.ResourceRequirements `json:"resources,omitempty"`
 	NoCache          bool                         `json:"noCache,omitempty"`
 	CustomAnalyzers  []CustomAnalyzer             `json:"customAnalyzers,omitempty"`
+	HTTP             bool                         `json:"http,omitempty"`
 	Filters          []string                     `json:"filters,omitempty"`
 	ExtraOptions     *ExtraOptionsRef             `json:"extraOptions,omitempty"`
 	Sink             *WebhookRef                  `json:"sink,omitempty"`
