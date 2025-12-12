@@ -125,6 +125,9 @@ spec:
                   topk:
                     default: "50"
                     type: string
+                  topp:
+                    default: "0.5"
+                    type: string
                 required:
                 - backend
                 type: object

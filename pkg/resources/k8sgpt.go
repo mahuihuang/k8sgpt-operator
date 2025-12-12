@@ -324,6 +324,10 @@ func GetDeployment(config v1alpha1.K8sGPT, outOfClusterMode bool, c client.Clien
 									Value: config.Spec.AI.Topk,
 								},
 								{
+									Name:  "K8SGPT_TOP_P",
+									Value: config.Spec.AI.Topp,
+								},
+								{
 									Name:  "XDG_CONFIG_HOME",
 									Value: "/k8sgpt-data/.config",
 								},
